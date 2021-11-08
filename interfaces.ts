@@ -40,3 +40,11 @@ export interface GameStatistics {
 	english: boolean;
 	hungarian: boolean[];
 }
+
+export interface ServerError {
+	error: string;
+	message: string;
+	stack: string;
+	detail: string;
+	table: string;
+}
