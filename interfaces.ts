@@ -1,15 +1,11 @@
 export type WordType = "word" | "expression";
 export type LanguageType = "english" | "hungarian";
-
-export interface WordStatistics {
-	english: number;
-	hungarian: number[];
-}
+export type MeaningWithPoint = { [meaning: string]: number };
 export interface Word {
 	id: number;
 	ownerId: number;
-	english: string;
-	hungarian: string[];
+	english: MeaningWithPoint;
+	hungarian: MeaningWithPoint;
 	exampleSentences: string[];
 	notes: string | null;
 	type: WordType;
@@ -20,13 +16,11 @@ export interface Word {
 export interface WordWithScores extends Word {
 	actualScore: number;
 	finalScore: number;
-	statistics: WordStatistics;
 }
 
 /* Used in Game feature */
 export interface KnowledgeLevel {
-	language: LanguageType;
-	index?: number;
+	meaning: string;
 	point: number;
 }
 
@@ -38,7 +32,7 @@ export interface TagColor extends KnowledgeLevel {
 
 export interface GameStatistics {
 	english: boolean;
-	hungarian: boolean[];
+	hungarian: { [meaning: string]: boolean };
 }
 
 export interface ServerError {
