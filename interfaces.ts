@@ -24,6 +24,12 @@ export interface WordWithScores extends Word {
 }
 
 /* Used in Game feature */
+export interface WordInGame extends WordWithScores {
+	wordToAsk: string;
+	wordToAnswer: string;
+	mainWordType: LanguageType;
+	tagColors: TagColor[];
+}
 export interface KnowledgeLevel {
 	language: LanguageType;
 	index?: number;
