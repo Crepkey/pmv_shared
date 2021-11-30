@@ -12,6 +12,7 @@ export interface Word {
 	hungarian: string[];
 	exampleSentences: string[];
 	notes: string | null;
+	definitions: string[];
 	type: WordType;
 	favourite: boolean;
 	deletionDate: Date | null;
@@ -40,6 +41,8 @@ export interface GameStatistics {
 	english: boolean;
 	hungarian: boolean[];
 }
+
+export type gameType = "multiple choice game" | "type the answer game" | "recognize it by the definition game";
 
 export interface ServerError {
 	error: string;
