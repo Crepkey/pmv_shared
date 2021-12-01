@@ -48,7 +48,13 @@ export interface GameStatistics {
 	hungarian: boolean[];
 }
 
-export type gameType = "multiple choice game" | "type the answer game" | "recognize it by the definition game";
+export type WordPracticeType = "multiple choice game" | "type the answer game" | "recognize it by the definition game";
+
+export interface WordPractice {
+	words: Word[];
+	practiceTypes: WordPracticeType[];
+	wrongAnswers: string[];
+}
 
 export interface ServerError {
 	error: string;
