@@ -12,7 +12,7 @@ You have to download this repo in the same folder where the front-end & back-end
 Back-end repo: [Click here for the repo](https://github.com/PetraVagi/pmv_back_end).
 Front-end repo: [Click here for the repo](https://github.com/Crepkey/pmv_frond_end).
 
-All the folders of repos have to be in the same folder so that the references can work properly.
+Repo folders have to be in the same folder so that the references can work properly.
 
 ## Contacts
 
