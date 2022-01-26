@@ -8,7 +8,7 @@ You have to download this repo in the same folder where the front-end & back-end
 
 **IMPORTANT INFORMATION:**
 
-**You also need to download the back-end and the shared-repository of this application.**
+**You also need to download the back-end and the front-repository of this application.**
 Back-end repo: [Click here for the repo](https://github.com/PetraVagi/pmv_back_end).
 Front-end repo: [Click here for the repo](https://github.com/Crepkey/pmv_frond_end).
 
